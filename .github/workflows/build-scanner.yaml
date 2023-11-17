@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: |
           cd /home/neuvector/kyledong/build_test/vul-dbgen
-          git clone --depth 1 https:/github.com/neuvector/vul-source.git
+          git clone --depth 1 https://github.com/neuvector/vul-source.git
           VULN_VER=x.xxx make db
           cd ..
 
