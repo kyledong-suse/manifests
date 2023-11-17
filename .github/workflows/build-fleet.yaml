@@ -8,7 +8,7 @@ jobs:
     runs-on: ARM64
     steps:
       - run: |
-          cd /home/neuvector
+          cd /home/neuvector/kyledong/build_test/neuvector
 
           cd neuvector
           make fleet
