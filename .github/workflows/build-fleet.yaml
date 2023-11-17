@@ -8,7 +8,7 @@ jobs:
     runs-on: ARM64
     steps:
       - run: |
-          git clone https://github.com/neuvector/neuvector.git
+          cd /home/neuvector
 
           cd neuvector
           make fleet
