@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ARM64
     steps:
       - run: |
           git clone https://github.com/neuvector/manager.git
