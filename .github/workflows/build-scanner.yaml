@@ -14,7 +14,7 @@ jobs:
           VULN_VER=x.xxx make db
           cd ..
 
-          git clone https://github.com/neuvector/scanner.git
+          cd /home/neuvector/kyledong/build_test/scanner
           mkdir -p scanner/data
           cp ./vul-dbgen/cvedb.regular scanner/data
 
