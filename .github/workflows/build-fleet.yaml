@@ -23,6 +23,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
+          file: /home/neuvector/kyledong/build_test/neuvector/neuvector/build/Dockerfile.enforcer
           push: true
           tags: nvpublic/en:kdong
