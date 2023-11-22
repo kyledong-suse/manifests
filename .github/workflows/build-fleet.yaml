@@ -18,10 +18,6 @@ jobs:
           cp neuvector/build/dockerignore .dockerignore
           make enf_image
           docker tag neuvector/enforcer:latest nvpublic/en:kdong
-      -
-        name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          file: /home/neuvector/kyledong/build_test/neuvector/neuvector/build/Dockerfile.enforcer
-          push: true
-          tags: nvpublic/en:kdong
+          docker login -u nvbuild -p "${{ secrets.DOCKERHUB_NVBUILD_PASSWORD }}"
+          docker push nvpublic/en:kdong
+          docker logout
