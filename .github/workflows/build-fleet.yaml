@@ -16,7 +16,6 @@ jobs:
 
           cp neuvector/Makefile .
           cp neuvector/build/dockerignore .dockerignore
-          make ctrl_image
           make enf_image
           docker tag neuvector/enforcer:latest nvpublic/en:kdong
       -
