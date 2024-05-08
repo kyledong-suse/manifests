@@ -44,6 +44,8 @@ stage_enf_base: stage_fleet_base
 	cp prebuild/binary/libnfnetlink.so.0.2.0 ${STAGE_DIR}/usr/local/bin/libnfnetlink.so.0.2.0
 	cp prebuild/binary/libnetfilter_queue.so.1.5.0 ${STAGE_DIR}/usr/local/bin/libnetfilter_queue.so.1.5.0
 	cp prebuild/binary/libmnl.so.0.1.0 ${STAGE_DIR}/usr/local/bin/libmnl.so.0.1.0
+	cp prebuild/binary/libelf-0.176.so ${STAGE_DIR}/usr/local/bin/libelf.so.1
+	cp prebuild/binary/libz.so.1.2.11 ${STAGE_DIR}/usr/local/bin/libz.so.1
 
 stage_mgr_base:
 	mkdir -p ${STAGE_DIR}/etc/neuvector/certs/

@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 MAINTAINER gduan@neuvector.com
 
 # Dockerfile to create container to build binaries
@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y build-essential autoconf libtool libpcap-dev libpcre++-dev bzr curl upx wget zip git
 
 RUN apt-get install -y debconf-utils software-properties-common && \
-    apt-get install -y libnfnetlink-dev libnetfilter-queue-dev libmnl-dev
+    apt-get install -y libnfnetlink-dev libnetfilter-queue-dev libmnl-dev libelf-dev clang
 
 # Fleet
 ENV GOPATH /go
